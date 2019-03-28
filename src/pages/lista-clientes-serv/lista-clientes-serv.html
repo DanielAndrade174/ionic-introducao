@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lista de Clientes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-content class="card-background-page">
+
+    <ion-card *ngFor="let c of clientes">
+      <div class="card-title">
+            <h2>{{c.nomeCliente}}</h2>
+            <h3>{{c.idade}} anos</h3>
+      </div>
+
+
+      <img src="{{c.foto}}" />
+
+      
+
+    </ion-card>
+  </ion-content>
+</ion-content>
